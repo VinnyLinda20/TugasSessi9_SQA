@@ -21,12 +21,12 @@ class MahasiswaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'foto' => 'image|mimes:png,jpg,jpeg|max: 4096',
+            // 'foto' => 'image|mimes:png,jpg,jpeg|max: 4096',
             'nim' => 'unique:App\Models\Mahasiswa,nim'
         ], [
-            'foto.image' => 'File yang diupload harus berupa foto!',
-            'foto.mimes' => 'File foto yang diperbolehkan hanya berformat: png, jgp, jpeg!',
-            'foto.max' => 'File yang diupload max 4MB!',
+            // 'foto.image' => 'File yang diupload harus berupa foto!',
+            // 'foto.mimes' => 'File foto yang diperbolehkan hanya berformat: png, jgp, jpeg!',
+            // 'foto.max' => 'File yang diupload max 4MB!',
             'nim.unique' => 'NIM yang diinput sudah terdaftar sebelumnya'
         ]);
 
